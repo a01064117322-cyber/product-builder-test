@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기 - 미식가이드</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: .5rem;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: .75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: .75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">미식가이드</a>
+            <nav class="main-nav">
+                <a href="../index.html">홈</a>
+                <a href="../regions/index.html">지역별 맛집</a>
+                <a href="../blog.html">블로그</a>
+                <a href="../about.html">소개</a>
+                <a href="contact.html" class="active">문의</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>문의하기</h1>
+            <p>미식가이드에 대한 제휴, 콘텐츠 제안, 기타 문의사항이 있으시면 아래 양식을 통해 연락주세요. 보내주신 모든 의견에 감사드리며, 최대한 빠른 시일 내에 답변드리겠습니다.</p>
+            
+            <form action="https://formspree.io/f/xykwegao" method="POST">
+                <div class="form-group">
+                    <label for="name">이름:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">이메일:</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">문의 내용:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">메시지 보내기</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <a href="../about.html">소개</a> |
+                <a href="privacy.html">개인정보처리방침</a> |
+                <a href="contact.html">문의하기</a>
+            </nav>
+            <p>&copy; 2024 미식가이드. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
